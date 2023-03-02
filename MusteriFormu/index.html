@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h3>Müşteri Formu</h3>
+<div>
+  <form>
+   <input type="hidden" value="" id="hdnId"> 
+    <label for="tcKimlikNo">TC Kimlik No</label>
+    <input type="text" id="tcKimlikNo" name="tcKimlikNo" placeholder="TC Kimlik No Yazınız..">
+
+    <label for="ad">Ad</label>
+    <input type="text" id="ad" name="ad" placeholder="Adınızı Yazınız..">
+
+    <label for="soyad">Soyad</label>
+    <input type="text" id="soyad" name="soyad" placeholder="Soyadınızı yazınız..">
+
+    <label for="dogumTarihi">Doğum Tarihi</label>
+    <input type="date" id="dogumTarihi" name="dogumTarihi" placeholder="Doğum Tarihinizi yazınız..">
+    
+    <div style="padding: 10px 0px;">
+    <label>Cinsiyet</label>
+    <input type="radio" id="rdbErkek" name="cinsiyet" checked>Erkek
+    <input type="radio" id="rdbKadin" name="cinsiyet">Kadın
+    </div>
+
+    <label for="dogumYeri">Doğum Yeri</label>
+    <select id="dogumYeri" name="dogumYeri">
+      <option value="İstanbul">İstanbul</option>
+      <option value="Ankara">Ankara</option>
+      <option value="İzmir">İzmir</option>
+    </select>
+    <a href="#" onclick="kaydet()">Kaydet</a>
+    <!--<input type="submit" value="Submit">-->
+  </form>
+
+  <hr>
+  <h3>Müşteri Tablosu</h3>
+  <table id="customers">
+    <tr>
+      <th>Id</th>
+      <th>TC Kimlik No</th>
+      <th>Ad</th>
+      <th>Soyad</th>
+      <th>Doğum Tarihi</th>
+      <th>Cinsiyet</th>
+      <th>Doğum Yeri</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
